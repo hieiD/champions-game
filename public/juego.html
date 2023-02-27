@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="./styles/style.css" />
+	</head>
+	<body>
+		<div class="masterBlock">
+			<h1 class="h1">CAMPEONES</h1>
+			<div class="elegir hidden">
+				<div class="elegirHeader">
+					<h2 class="elegirTitle">Elige tu clase</h2>
+				</div>
+				<div class="elegirBody">
+					<div class="campeonDiv">
+						<img src="imagenes/guerrero.png" alt="" />
+						<button class="botonElegir boton" id="guerrero">Guerrero</button>
+					</div>
+					<div class="campeonDiv">
+						<img src="imagenes/mago.png" alt="" />
+						<button class="botonElegir boton" id="mago">Mago</button>
+					</div>
+					<div class="campeonDiv">
+						<img src="imagenes/arquero.png" alt="" />
+						<button class="botonElegir boton" id="arquero">Arquero</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="campeon hidden">
+				<div class="campeonHeader">
+					<h2>Campeón</h2>
+				</div>
+				<div class="campeonBody">
+					<img class="claseImg" src="" alt="" />
+					<div class="misDatos">
+						<div class="usuarioDiv">
+							<p class="dato">Nombre: <span class="usuario valor"></span></p>
+						</div>
+						<div class="claseDiv">
+							<p class="dato">Clase: <span class="clase valor"></span></p>
+						</div>
+						<div class="experienciaDiv">
+							<p class="dato">Experiencia: <span class="experiencia valor"></span></p>
+						</div>
+						<button class="mision boton">Realizar misión</button>
+						<p class="misionInfo"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./scripts/juego.js"></script>
+	</body>
+</html>

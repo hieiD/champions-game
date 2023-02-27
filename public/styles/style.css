@@ -1,0 +1,186 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/MontserratAlternates-Regular.ttf);
+}
+body {
+	background-color: #000000;
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.h1 {
+	margin-bottom: 32px;
+	color: #fff;
+	font-size: 48px;
+}
+.masterBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	padding: 16px;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 450px;
+	padding: 24px;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	background: #040b1a;
+}
+
+.block + .block {
+	margin-top: 24px;
+}
+
+.block__title {
+	margin-bottom: 16px;
+	font-size: 32 px;
+	color: #fff;
+}
+
+.boton {
+	height: 32px;
+	width: 100%;
+	border-radius: 8px;
+	font-size: 16px;
+	background: #000000;
+	color: #fff;
+	border: 2px solid #fff;
+	margin-top: 16px;
+	cursor: pointer;
+}
+
+.boton:hover {
+	background-color: #363750;
+}
+
+.input {
+	margin-bottom: 8px;
+	border-radius: 8px;
+	height: 32px;
+	padding-left: 16px;
+	background: #837272;
+	color: #fff;
+	font-size: 16px;
+}
+
+.input + .input {
+	margin-top: 8px;
+}
+
+::placeholder {
+	color: #fff;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #fff;
+}
+
+::-ms-input-placeholder {
+	color: #fff;
+}
+
+.respuesta {
+	position: absolute;
+	top: 10px;
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: #000;
+	padding: 16px;
+	border-radius: 2px;
+	opacity: 1;
+	transition: all 0.2s ease-in;
+}
+
+.elegir {
+	opacity: 1;
+	transition: all 0.2s ease-in;
+}
+
+.elegirBody {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.elegirHeader {
+	flex-basis: 100%;
+}
+
+.elegirTitle {
+	color: #fff;
+	align-self: flex-start;
+}
+
+.campeonDiv {
+	max-width: 360px;
+}
+
+.campeonDiv + .campeonDiv {
+	margin-left: 16px;
+}
+
+.misDatos {
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.campeon {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	opacity: 1;
+	transition: all 0.2s ease-in;
+}
+
+.campeonHeader {
+	flex-basis: 100%;
+	max-width: 766px;
+	color: #fff;
+	margin-bottom: 16px;
+	font-size: 24px;
+}
+
+.campeonBody {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+}
+
+.misionInfo {
+	color: #fff;
+	margin-top: 32px;
+}
+
+.dato {
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.valor {
+	color: #837272;
+	text-transform: capitalize;
+}
+
+.hidden {
+	opacity: 0;
+	height: 0;
+	padding: 0;
+	border: 0;
+	visibility: hidden;
+	transition: all 0.2s ease-out;
+}
